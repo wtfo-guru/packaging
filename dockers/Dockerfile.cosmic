@@ -1,17 +1,16 @@
-FROM ubuntu:18.04
+FROM ubuntu:cosmic
 LABEL maintainer="qs5779@mail.com"
 
 RUN apt-get update && apt-get install -y \
-	ruby-dev \
-	gcc \
-	make \
-	ruby \
+  vim \
+  build-essential \
+  fakeroot \
+  devscripts \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN gem install fpm -v 1.11.0 --no-ri --no-rdoc
 
-VOLUME [ "/tmp/fpm" ]
-WORKDIR /tmp/fpm
+VOLUME [ "/tmp/build" ]
+WORKDIR /tmp/build
 
-ENTRYPOINT [ "/usr/local/bin/fpm" ]
-CMD [ "--help" ]
+#ENTRYPOINT [ "nada" ]
+CMD [ "/bin/bash" ]
