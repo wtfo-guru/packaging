@@ -1,0 +1,16 @@
+FROM debian:stretch
+LABEL maintainer="qs5779@mail.com"
+
+RUN apt-get update && apt-get install -y \
+  vim \
+  build-essential \
+  fakeroot \
+  devscripts \
+	&& rm -rf /var/lib/apt/lists/*
+
+
+VOLUME [ "/tmp/build" ]
+WORKDIR /tmp/build
+
+#ENTRYPOINT [ "nada" ]
+CMD [ "/bin/bash" ]
