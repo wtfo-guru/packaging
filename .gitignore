@@ -1,1 +1,8 @@
 old-deb/
+dockers/build/bionic/
+dockers/build/stretch/
+dockers/build/cosmic/
+dockers/build/package-source/
+aptrepo/db/
+aptrepo/dists/
+aptrepo/pool/
