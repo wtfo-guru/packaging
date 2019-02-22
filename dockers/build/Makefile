@@ -1,6 +1,6 @@
 # vim:ft=make:noet:ai:sw=4:ts=4
 
-CODENAME =? generic
+CODENAME ?= generic
 
 fail2ban:
 	rm -fr /etc/apt/sources.list.d/*

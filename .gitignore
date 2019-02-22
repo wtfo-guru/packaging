@@ -6,3 +6,4 @@ dockers/build/package-source/
 aptrepo/db/
 aptrepo/dists/
 aptrepo/pool/
+dockers/build/work/
