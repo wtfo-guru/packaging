@@ -1,7 +1,7 @@
 Origin: apt.wtfo-guru.com
 Label: apt repository
 Codename: xenial
-Architectures: amd64
+Architectures: i386 amd64
 Components: main
 Description: Wtfo ubuntu xenial repo
 SignWith: yes
@@ -10,7 +10,7 @@ Pull: xenial
 Origin: apt.wtfo-guru.com
 Label: apt repository
 Codename: bionic
-Architectures: amd64
+Architectures: i386 amd64
 Components: main
 Description: Wtfo ubuntu bionic package repo
 SignWith: yes
@@ -19,7 +19,7 @@ Pull: bionic
 Origin: apt.wtfo-guru.com
 Label: apt repository
 Codename: cosmic
-Architectures: amd64
+Architectures: i386 amd64
 Components: main
 Description: Wtfo ubuntu cosmic package repo
 SignWith: yes
@@ -28,7 +28,7 @@ Pull: cosmic
 Origin: apt.wtfo-guru.com
 Label: apt repository
 Codename: stretch
-Architectures: armhf amd64
+Architectures: armhf i386 amd64
 Components: main
 Description: Wtfo debian package repo
 SignWith: yes
